@@ -1,6 +1,7 @@
 
 
 // "!" => NOT Operator
+console.log("! NOT Operator")
 
 let myCondition_NOT = true;
 console.log(myCondition_NOT);   // -> true
@@ -10,6 +11,7 @@ console.log(myCondition_NOT);   // -> false
 
 
 // "||" = OR Operator
+console.log("|| OR Operator")
 
 let myCondition_OR_1 = true || true;
 console.log(myCondition_OR_1);   // -> true
@@ -25,6 +27,7 @@ console.log(myCondition_OR_4);   // -> true (bei OR genügt ein einziges TRUE um
 
 
 // "&&" = AND Operator
+console.log("&& AND Operator")
 
 let myCondition_AND_1 = true && true;
 console.log(myCondition_AND_1);   // -> true
@@ -40,6 +43,7 @@ console.log(myCondition_AND_4);   // -> false (bei AND genügt ein einziges FALS
 
 
 // "&&" und "||" = Kombination aus AND und OR Operator
+console.log("&& und ||")
 
 myCondition_AND_OR_1 = true || false && false;
 console.log(myCondition_AND_OR_1);   // -> true 
@@ -55,3 +59,27 @@ console.log(myCondition_AND_OR_4);   // -> true (zuerst wird && ausgeführt und 
 
 myCondition_AND_OR_5 = false && true || true;
 console.log(myCondition_AND_OR_5);   // -> true (zuerst wird && ausgeführt und danach || - unabhängig von der Reihenfolge)
+
+
+// Test
+console.log("Test")
+
+console.log(true && false);   // -> false
+
+console.log(true || false);   // -> true
+
+console.log(false && true);   // -> false
+
+console.log(true && (false || true));   // -> true
+
+console.log((true && false) || true);   // -> true
+
+console.log(!(true && false));   // -> true
+
+console.log(!(false || true));   // -> false
+
+console.log(!(true && (false || true)));   // -> false
+
+console.log((true && !(false || true)) || (false && (true || false)));   // -> false = false || false = (true && false) || (false && true)
+
+console.log((true || !(false && true)) && (!(true || false) || (false && true)));   // -> false = true && false = (true || true) && (false || false)
