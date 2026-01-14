@@ -1,6 +1,8 @@
-//// Rechenoperationen
+/// Rechenoperationen
+console.log("/// Rechenoperationen");
 
-/// mit Numbers
+// mit Numbers
+console.log("// mit Numbers");
 
 let myDivision = 10 / 5;
 console.log(myDivision);   // -> 2
@@ -18,7 +20,8 @@ let myPow = 2 ** 3;  // power of (Hochzahl/Potenzen) z.B. 2^3
 console.log(myPow);   // -> 8
 
 
-/// mit Strings (nur + möglich)
+// mit Strings (nur + möglich)
+console.log("// mit Strings");
 
 let myMerge1 = "hello" + " world!";
 console.log(myMerge1);   // -> hello world!
@@ -33,7 +36,8 @@ let myMerge4 = "hello" / " world!";
 console.log(myMerge4);   // -> NaN !!!
 
 
-/// Kombination aus Numbers und Strings
+// Kombination aus Numbers und Strings
+console.log("// Kombination aus Numbers und Strings");
 
 let myCombo1 = 5 + " Jahre";
 console.log(myCombo1);   // -> 5 Jahre

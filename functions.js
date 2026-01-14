@@ -1,7 +1,8 @@
 /// Functions
+console.log("/// Functions");
 
 // Function mit globalen Variablen
-console.log("Function mit globalen Variablen");
+console.log("// Function mit globalen Variablen");
 let discount = 50;
 let price = 500;
 
@@ -20,7 +21,7 @@ logCalculatePrice_globaleVariablen();   // -> 416.5
 
 
 // Function mit Parametern
-console.log("Function mit Parametern");
+console.log("// Function mit Parametern");
 
 function logCalculatePrice_Parameter(discount, price, tax) {
     console.log((price - discount) * tax);
@@ -30,7 +31,7 @@ logCalculatePrice_Parameter(20, 300, 1.19);   // -> 333.2
 
 
 // Function mit "return"
-console.log("Function mit return");
+console.log("// Function mit return");
 
 function logCalculatePrice(discount, price, tax) {
     let value = ((price - discount) * tax);

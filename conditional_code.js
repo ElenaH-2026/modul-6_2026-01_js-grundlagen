@@ -1,7 +1,9 @@
 /// Conditional Code
+console.log("/// Conditional Code");
+
 
 // "!" => NOT Operator
-console.log("! NOT Operator")
+console.log("// ! NOT Operator")
 
 let myCondition_NOT = true;
 console.log(myCondition_NOT);   // -> true
@@ -11,7 +13,7 @@ console.log(myCondition_NOT);   // -> false
 
 
 // "||" => OR Operator
-console.log("|| OR Operator")
+console.log("// || OR Operator")
 
 let myCondition_OR_1 = true || true;
 console.log(myCondition_OR_1);   // -> true
@@ -27,7 +29,7 @@ console.log(myCondition_OR_4);   // -> true (bei OR genügt ein einziges TRUE um
 
 
 // "&&" => AND Operator
-console.log("&& AND Operator")
+console.log("// && AND Operator")
 
 let myCondition_AND_1 = true && true;
 console.log(myCondition_AND_1);   // -> true
@@ -43,7 +45,7 @@ console.log(myCondition_AND_4);   // -> false (bei AND genügt ein einziges FALS
 
 
 // "&&" und "||" => Kombination aus AND und OR Operator
-console.log("&& und ||")
+console.log("// && und ||")
 
 let myCondition_AND_OR_1 = true || false && false;
 console.log(myCondition_AND_OR_1);   // -> true 
@@ -62,7 +64,7 @@ console.log(myCondition_AND_OR_5);   // -> true (zuerst wird && ausgeführt und 
 
 
 // Test => am 13.01.2026 alles korrekt gelöst :D
-console.log("Test && und ||")
+console.log("// Test && und ||")
 
 console.log(true && false);   // -> false
 
@@ -86,7 +88,7 @@ console.log((true || !(false && true)) && (!(true || false) || (false && true)))
 
 
 // "==" und "===" => GLEICH Operator
-console.log("== und ===")
+console.log("// == und ===")
 
 let myCondition_GLEICH_1 = 33 == 33;
 console.log(myCondition_GLEICH_1);   // -> true
@@ -102,7 +104,7 @@ console.log(myCondition_GLEICH_4);   // -> false
 
 
 // "<", ">", "<=", ">=" => GRÖSSER / KLEINER Operator
-console.log("<, >, <=, >=")
+console.log("// <, >, <=, >=")
 
 let myCondition_GRÖSSER = 33 > 33;
 console.log(myCondition_GRÖSSER);   // -> false
@@ -115,7 +117,7 @@ console.log(myCondition_KLEINER);   // -> true
 
 
 // "!=" und "!==" => NICHT-GLEICH Operator
-console.log("!= und !==")
+console.log("// != und !==")
 
 let myCondition_NICHT_GLEICH_1 = 33 != 33;
 console.log(myCondition_NICHT_GLEICH_1);   // -> false
@@ -131,7 +133,7 @@ console.log(myCondition_NICHT_GLEICH_4);   // -> true (testet NICHT-Gleichheit M
 
 
 // Test => am 13.01.2026 alles korrekt gelöst :D
-console.log("Test <, >, ==, !, &&, ||")
+console.log("// Test <, >, ==, !, &&, ||")
 
 console.log(5 <= 10);   // -> true
 
@@ -155,7 +157,7 @@ console.log((4 >= 4) && (8 < 15) && (3 == 3));   // -> true = true && true && tr
 
 
 // if, else, else if
-console.log("if, else, else if")
+console.log("// if, else, else if")
 
 let myIfCondition_1 = true;
 let myIfCondition_2 = false;
@@ -176,7 +178,7 @@ if(myIfCondition_2) {
 
 
 // Test => am 14.01.2026 alles korrekt gelöst :D
-console.log("Test if, else, else if")
+console.log("// Test if, else, else if")
 
 // Aufgabe 1:
 if (5 <= 10) {
