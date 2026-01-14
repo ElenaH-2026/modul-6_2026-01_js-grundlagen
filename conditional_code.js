@@ -152,3 +152,25 @@ console.log((6 != 6) || (15 <= 20));   // -> true = false || true
 console.log((7 < 5) == !(10 >= 10));   // -> true = false == false
 
 console.log((4 >= 4) && (8 < 15) && (3 == 3));   // -> true = true && true && true
+
+
+// if, else, else if
+console.log("if, else, else if")
+
+let myIfCondition_1 = true;
+let myIfCondition_2 = false;
+
+if(myIfCondition_1) {
+    console.log("hello world!");   // -> hello world!
+}
+
+if(myIfCondition_2) {
+    console.log("hello world!");   // -> KEINE Ausgabe, da Bedingung = "false"
+}
+
+if(myIfCondition_2) {
+    console.log("hello world!");   // -> KEINE Ausgabe, da Bedingung = "false"
+} else {
+    console.log("bye world!");   // -> bye world!
+}
+
