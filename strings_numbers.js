@@ -62,14 +62,14 @@ console.log(myCombo6);   // -> 0.7999999999999998
 // https://www.w3schools.com/js/js_strings.asp
 
 
-// Funktionen und Methoden für Strings
+// Properties und Methods für Strings
 // (https://www.w3schools.com/jsref/jsref_obj_string.asp)
-console.log("Funktionen und Methoden für Strings");
+console.log("Properties und Methods für Strings");
 
-// ".length" => Funktion zur Zählung von Zeichen
+// ".length" => Properties zur Zählung von Zeichen
 // (https://www.w3schools.com/jsref/jsref_length_string.asp)
 
-// ".trim()" => Methode zur Entfernung aller Leerzeichen in einem String
+// ".trim()" => Methods zur Entfernung aller Leerzeichen in einem String
 // (https://www.w3schools.com/jsref/jsref_trim_string.asp)
 
 let myTestString = "     hello    ";
