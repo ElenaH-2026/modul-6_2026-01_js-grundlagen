@@ -1,8 +1,8 @@
-/// Rechenoperationen
-console.log("/// Rechenoperationen");
+/// Strings and Numbers
+console.log("/// Strings and Numbers");
 
-// mit Numbers
-console.log("// mit Numbers");
+// Rechenoperationen mit Numbers
+console.log("// Rechenoperationen mit Numbers");
 
 let myDivision = 10 / 5;
 console.log(myDivision);   // -> 2
@@ -20,8 +20,8 @@ let myPow = 2 ** 3;  // power of (Hochzahl/Potenzen) z.B. 2^3
 console.log(myPow);   // -> 8
 
 
-// mit Strings (nur + möglich)
-console.log("// mit Strings");
+// Rechenoperationen mit Strings (nur + möglich)
+console.log("// Rechenoperationen mit Strings");
 
 let myMerge1 = "hello" + " world!";
 console.log(myMerge1);   // -> hello world!
@@ -60,3 +60,21 @@ console.log(myCombo6);   // -> 0.7999999999999998
 // => Weiterführende Links:
 // Tutorial "JS Strings" von w3schools
 // https://www.w3schools.com/js/js_strings.asp
+
+
+// Funktionen und Methoden für Strings
+// (https://www.w3schools.com/jsref/jsref_obj_string.asp)
+console.log("Funktionen und Methoden für Strings");
+
+// ".length" => Funktion zur Zählung von Zeichen
+// (https://www.w3schools.com/jsref/jsref_length_string.asp)
+
+// ".trim()" => Methode zur Entfernung aller Leerzeichen in einem String
+// (https://www.w3schools.com/jsref/jsref_trim_string.asp)
+
+let myTestString = "     hello    ";
+console.log(myTestString);   // -> hello
+console.log(myTestString.length);   // -> 14 !! Achtung. Es werden alle Zeichen des Strings gezählt. Auch die Leerzeichen.
+
+myTestString = myTestString.trim();
+console.log(myTestString.length);   // -> 5
