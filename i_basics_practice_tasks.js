@@ -1,5 +1,5 @@
-//// Übungen
-console.log("/// Übungen");
+//// Sektion I: Basics => Übungen
+console.log("/// Sektion I: Basics => Übungen");
 
 
 /// 01 Aufgabe
