@@ -29,3 +29,39 @@ document.getElementById("aufgabe_button_div").style.display = "flex";
 document.getElementById("aufgabe_button_div").style.fontSize = "24px";
 document.getElementById("aufgabe_button_div").style.justifyContent = "center";
 document.getElementById("aufgabe_button_div").style.alignItems = "center";
+
+
+//// Aufgaben: setAttribute
+console.log("//// Aufgaben: setAttribute");
+
+/// 1. Aufgabe
+console.log("/// 1. Aufgabe");
+
+// Erstelle ein p-tag mit einer selbst gewählten id und Inhalt.
+console.log(document.getElementById("aufgabe_setAttribute_p_1"));
+
+
+/// 2. Aufgabe
+console.log("/// 2. Aufgabe");
+
+// Füge mit JavaScript dem p-tag einen title hinzu.
+// Hinweis: das title Attribute ist meist auch als Tooltip zu verstehen, 
+// mehr dazu z.B. hier: https://www.w3schools.com/tags/att_global_title.asp
+document.getElementById("aufgabe_setAttribute_p_1").title = "Übungstext";
+
+
+/// 3. Probiere aus
+console.log("/// 3. Probiere aus");
+
+// Kannst du auch eine css class mit setAttribute hinzufügen?
+document.getElementById("aufgabe_setAttribute_p_1").setAttribute("class", "green_bg");
+// -> Bei .setAttribute wird die bestehende css class überschrieben/ersetzt!
+
+/// 4. Probiere aus
+console.log("/// 4. Probiere aus");
+
+// Worin liegt der Unterschied von classList.add("test_class") und setAttribute("class", "test_class")?
+// Hinweis: Füge hierzu vorher schon einmal eine andere class ein!
+
+document.getElementById("aufgabe_setAttribute_p_2").classList.add("green_bg");
+// -> Bei .classList.add wird eine weitere css class hinzugefügt.
