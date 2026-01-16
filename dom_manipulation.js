@@ -31,3 +31,8 @@ document.getElementById("test_input_nr_2").value = 123;
 console.log(document.getElementById("test_input_nr_0").value);   // -> 5
 console.log(document.getElementById("test_input_nr_1").value);   // -> text
 console.log(document.getElementById("test_input_nr_2").value);   // -> 123
+
+// Vorbereitung für Modul 6 - Sektion II - Video 07 oncklick
+function myToggleFunction(id) {
+    document.getElementById(id)
+}

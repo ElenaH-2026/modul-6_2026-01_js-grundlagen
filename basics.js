@@ -15,8 +15,8 @@ console.log(myAge);
 // "const" => konstante (UNveränderliche) Variable
 console.log("// const => konstante (UNveränderliche) Variable");
 
-const myBirthyear = 1992;
-console.log(myBirthyear);
+const MY_BIRTHYEAR = 1992;
+console.log(MY_BIRTHYEAR);
 
 
 /// Datentypen
