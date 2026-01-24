@@ -65,3 +65,28 @@ console.log("/// 4. Probiere aus");
 
 document.getElementById("aufgabe_setAttribute_p_2").classList.add("green_bg");
 // -> Bei .classList.add wird eine weitere css class hinzugefügt.
+
+
+//// Aufgaben: onkeyup/onkeydown
+
+/// 1. Aufgabe
+console.log("/// 1. Aufgabe");
+
+// Erstelle ein inputfeld mit einer selbstgewählten id
+
+
+/// 2. Aufgabe
+console.log("/// 2. Aufgabe");
+
+// Erstelle eine Funktion, die den Value dieses inputfeldes aus loggt.
+function myOnklickFunction(id) {
+    console.log(document.getElementById(id).value);
+}
+
+
+/// 3. Probiere aus
+console.log("/// 3. Probiere aus");
+
+// Vergleiche nun den log von onkeyup und onkeydown. Siehst du einen Unterschied?
+// bei okeyup wird der ganze Eintrag in einer Zeile ausgeloggt
+// bei onkeydown entsteht wird eine Pyramide ausgelogt. Jede Zeile enthält den Eintrag der vorherigen ergänzt um den akltuellen.

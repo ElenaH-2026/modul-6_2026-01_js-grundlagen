@@ -27,7 +27,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="console.log('Seite wird geladen')">
     <h1 id="website_titel">Der Titel der Website</h1>
     <div id="test_div_1"></div>
     <div id="test_div_2" class="green_bg"></div>
@@ -59,6 +59,34 @@
     <p id="aufgabe_setAttribute_p_2" class="red_text">
         Das ist der 2. Übungstext für die Aufgabe zu "setAttribute".
     </p>
+
+    <h2>Events im DOM/HTML</h2>
+
+    <h1>onclick -> auf Events im DOM/HTML reagieren</h1>
+    <p id="toggle_p_tag">Das ist mein "onclick" Übungstext.</p>
+    <button onclick="toggleDNone('toggle_p_tag')">bitte "toggle" ausführen</button>
+    <button onclick="logger()">bitte "logger" ausführen</button>
+
+    <h1>onclick - Alternativen</h1>
+    <p>"onload" -> z.B. für den body</p>
+    <p>"onkeydown"/"onkeyup" -> z.B. für Input-Felder (Keyup ist in der Regel sinnvoller)</p>
+    <input type="text" onkeydown="console.log('keydown')">
+    <input type="text" onkeyup="console.log('keyup')">
+    <p>"onfocus"</p>
+    <input type="text" onfocus="console.log('focus')">
+    <p>"onchange" -> z.B. für Checkbox-Felder</p> 
+    <input type="checkbox" onchange="console.log('change')">
+
+    <h2 id="aufgabe_onkey_h2">Aufgaben: onkeyup/onkeydown</h2>
+    <input type="text" name="onkeyup_text" 
+    id="aufgabe_onkeyup_input"
+    onkeyup="myOnklickFunction('aufgabe_onkeyup_input')"
+    >
+    <input type="text" name="onkeydown_text" 
+    id="aufgabe_onkeydown_input"
+    onkeydown="myOnklickFunction('aufgabe_onkeydown_input')"
+    >
+
 
 </body>
     <script src="./dom_manipulation.js"></script>

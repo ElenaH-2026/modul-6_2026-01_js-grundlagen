@@ -33,6 +33,19 @@ console.log(document.getElementById("test_input_nr_1").value);   // -> text
 console.log(document.getElementById("test_input_nr_2").value);   // -> 123
 
 // Vorbereitung für Modul 6 - Sektion II - Video 07 oncklick
-function myToggleFunction(id) {
-    document.getElementById(id)
+// Baue eine Funktion, die die Klasse "d_none" mit classList.toggle() hinzufügt/entfernt bei einem beliebigen HTML Element.
+// Hinweis: Beliebig heißt hier, dass die id aus dem Parameter derFunktion genommen wird.
+function toggleDNone(id) {
+    document.getElementById(id).classList.toggle("d_none");
 }
+
+function logger(params) {
+    console.log("ja");
+    
+}
+
+
+// Events (z.B. oncklick, onchange, onload, onkeyup, onkeydown, onfocus)
+// https://www.w3schools.com/jsref/dom_obj_event.asp
+// Weitere Events PC: mousedown, mouseleave, mouseover, ...
+// Events Mobilgeräte: touchstart, touchend, ...
