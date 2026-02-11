@@ -29,7 +29,30 @@ function testTwo(){
 }
 
 function debuggerOutput(text){
-    count++;
-    let debuggerLogRef = document.getElementById('debugger_log');
+    count--;
+    let debuggerLogRef = document.getElementById('debugger_log_2');
     debuggerLogRef.innerHTML += " => " + text + count;
+}
+
+function init_3() {
+    testThree();
+    debuggerOutput_3('init_3');
+    testThree();
+    testFour(); // Achtung hier ist ein Fehler, wel kein Parameter übergeben wurde!
+    testThree();
+}
+
+function testThree() {
+    debuggerOutput_3('testThree');
+}
+
+function testFour(text) {
+    debuggerOutput_3(text);
+    testThree();
+}
+
+function debuggerOutput_3(text){
+    count++;
+    let debuggerLogRef = document.getElementById('debugger_log_3');
+    debuggerLogRef.innerHTML = " => " + count + text;
 }
