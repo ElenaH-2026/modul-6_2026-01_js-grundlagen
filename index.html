@@ -34,7 +34,7 @@
         }
     </style>
 </head>
-<body onload="scopeTest()">
+<body onload="testSeven()">
     <h1 class="section_titel_style">Sektion II: DOM-Manipulation</h1>
     <h1 id="website_titel">Der Titel der Website</h1>
     <div id="test_div_1"></div>
@@ -103,10 +103,18 @@
     <p id="debugger_log_2"></p>
     <button onclick="init_2()">start debugger testing</button>
     
-
     <h1>Variablen anzeigen</h1>
     <p id="debugger_log_3">0</p>
     <button onclick="init_3()">Start Code</button>
+
+    <h1>Scopes im Debugger sehen</h1>
+    <p id="debugger_log_4">0</p>
+    <button onclick="init_4()">Start Code</button>
+
+    <h1 onclick="testSeven()">wichtige Tabs des Debuggers</h1>
+    <p id="debugger_log_5">0</p>
+    <input type="text" onkeyup="testSeven()">
+    <button onclick="init_5()">Start Code</button>
 
 </body>
     <script src="./dom_manipulation.js"></script>
