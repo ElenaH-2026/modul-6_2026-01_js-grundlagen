@@ -11,8 +11,14 @@
     <script src="./functions.js"></script>
     <script src="./objects.js"></script>
     <script src="./i_basics_practice_tasks.js"></script>
+    <script src="./debugger.js"></script>
 
     <style>
+        .section_titel_style {
+            color: white;
+            background-color: black;
+        }
+
         .green_bg {
             height: 50px;
             background-color: greenyellow;
@@ -28,6 +34,7 @@
     </style>
 </head>
 <body onload="console.log('Seite wird geladen')">
+    <h1 class="section_titel_style">Sektion II: DOM-Manipulation</h1>
     <h1 id="website_titel">Der Titel der Website</h1>
     <div id="test_div_1"></div>
     <div id="test_div_2" class="green_bg"></div>
@@ -81,12 +88,19 @@
     <input type="text" name="onkeyup_text" 
     id="aufgabe_onkeyup_input"
     onkeyup="myOnklickFunction('aufgabe_onkeyup_input')"
-    >
+    />
     <input type="text" name="onkeydown_text" 
     id="aufgabe_onkeydown_input"
     onkeydown="myOnklickFunction('aufgabe_onkeydown_input')"
-    >
+    />
 
+    <h1 class="section_titel_style">Sektion III: Debugger</h1>
+    <h1>Breakpoints setzen</h1>
+    <button onclick="init_1()">Start Code</button>
+
+    <h1>Debugger-Pfeile</h1>
+    <button onclick="init_2()">start debugger testing</button>
+    <p id="debugger_log"></p>
 
 </body>
     <script src="./dom_manipulation.js"></script>
