@@ -13,109 +13,176 @@
     <script src="./i_basics_practice_tasks.js"></script>
     <script src="./debugger.js"></script>
     <script src="./scopes.js"></script>
+    <script src="./arrays_loops.js"></script>
 
     <style>
-        .section_titel_style {
-            color: white;
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: gray;
+        }
+
+        header, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: black;
+            color: lightgray;
+            height: 100px;
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            margin: 100px;
+        }
+
+        section {
+            padding: 40px 16px;
+            width: 400px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .section_titel_style {
+            color: lightgray;
+            background-color: black;
+            text-align: center;
         }
 
         .green_bg {
             height: 50px;
-            background-color: greenyellow;
+            background-color: green;
         }
 
         .red_text {
-            color: red;
+            color: darkred;
         }
 
         .d_none {
             display: none;
         }
+
+        @media (max-width: 1400px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+        
     </style>
 </head>
 <body onload="testSeven()">
-    <h1 class="section_titel_style">Sektion II: DOM-Manipulation</h1>
-    <h1 id="website_titel">Der Titel der Website</h1>
-    <div id="test_div_1"></div>
-    <div id="test_div_2" class="green_bg"></div>
-    <div id="test_div_3"></div>
-    <script></script>
+    <header>
+        <h1>Java Script - Grundlagen</h1>
+    </header>
+    <main>
+        <section>
+            <h1 class="section_titel_style">Sektion II:<br>DOM-Manipulation</h1>
+            <h1 id="website_titel">Der Titel der Website</h1>
+            <div id="test_div_1"></div>
+            <div id="test_div_2" class="green_bg"></div>
+            <div id="test_div_3"></div>
+            <script></script>
 
-    <h2 id="aufgabe_button_h2">Aufgaben: Button hinzufügen</h2>
-    <div id="aufgabe_button_div"></div>
+            <h2 id="aufgabe_button_h2">Aufgaben: Button hinzufügen</h2>
+            <div id="aufgabe_button_div"></div>
 
-    <input id="test_input_nr_0" 
-        type="number" value="5">
-    <input id="test_input_nr_1" 
-        type="number" value="5">
-    <input id="test_input_nr_2" 
-        type="number" value="5">
-    <input 
-        type="checkbox" checked="true">
-    <input 
-        type="checkbox">
+            <input id="test_input_nr_0" 
+                type="number" value="5">
+            <input id="test_input_nr_1" 
+                type="number" value="5">
+            <input id="test_input_nr_2" 
+                type="number" value="5">
+            <input 
+                type="checkbox" checked="true">
+            <input 
+                type="checkbox">
 
 
-    <h2 id="aufgabe_setAttribute_h2">Aufgaben: setAttribute</h2>
-    <p class="red_text">
-        Das ist der 0. Übungstext für die Aufgabe zu "setAttribute".
-    </p>
-    <p id="aufgabe_setAttribute_p_1" class="red_text">
-        Das ist der 1. Übungstext für die Aufgabe zu "setAttribute".
-    </p>
-    <p id="aufgabe_setAttribute_p_2" class="red_text">
-        Das ist der 2. Übungstext für die Aufgabe zu "setAttribute".
-    </p>
+            <h2 id="aufgabe_setAttribute_h2">Aufgaben: setAttribute</h2>
+            <p class="red_text">
+                Das ist der 0. Übungstext für die Aufgabe zu "setAttribute".
+            </p>
+            <p id="aufgabe_setAttribute_p_1" class="red_text">
+                Das ist der 1. Übungstext für die Aufgabe zu "setAttribute".
+            </p>
+            <p id="aufgabe_setAttribute_p_2" class="red_text">
+                Das ist der 2. Übungstext für die Aufgabe zu "setAttribute".
+            </p>
 
-    <h2>Events im DOM/HTML</h2>
+            <h2>Events im DOM/HTML</h2>
 
-    <h1>onclick -> auf Events im DOM/HTML reagieren</h1>
-    <p id="toggle_p_tag">Das ist mein "onclick" Übungstext.</p>
-    <button onclick="toggleDNone('toggle_p_tag')">bitte "toggle" ausführen</button>
-    <button onclick="logger()">bitte "logger" ausführen</button>
+            <h1>onclick -> auf Events im DOM/HTML reagieren</h1>
+            <p id="toggle_p_tag">Das ist mein "onclick" Übungstext.</p>
+            <button onclick="toggleDNone('toggle_p_tag')">bitte "toggle" ausführen</button>
+            <button onclick="logger()">bitte "logger" ausführen</button>
 
-    <h1>onclick - Alternativen</h1>
-    <p>"onload" -> z.B. für den body</p>
-    <p>"onkeydown"/"onkeyup" -> z.B. für Input-Felder (Keyup ist in der Regel sinnvoller)</p>
-    <input type="text" onkeydown="console.log('keydown')">
-    <input type="text" onkeyup="console.log('keyup')">
-    <p>"onfocus"</p>
-    <input type="text" onfocus="console.log('focus')">
-    <p>"onchange" -> z.B. für Checkbox-Felder</p> 
-    <input type="checkbox" onchange="console.log('change')">
+            <h1>onclick - Alternativen</h1>
+            <p>"onload" -> z.B. für den body</p>
+            <p>"onkeydown"/"onkeyup" -> z.B. für Input-Felder (Keyup ist in der Regel sinnvoller)</p>
+            <input type="text" onkeydown="console.log('keydown')">
+            <input type="text" onkeyup="console.log('keyup')">
+            <p>"onfocus"</p>
+            <input type="text" onfocus="console.log('focus')">
+            <p>"onchange" -> z.B. für Checkbox-Felder</p> 
+            <input type="checkbox" onchange="console.log('change')">
 
-    <h2 id="aufgabe_onkey_h2">Aufgaben: onkeyup/onkeydown</h2>
-    <input type="text" name="onkeyup_text" 
-    id="aufgabe_onkeyup_input"
-    onkeyup="myOnklickFunction('aufgabe_onkeyup_input')"
-    />
-    <input type="text" name="onkeydown_text" 
-    id="aufgabe_onkeydown_input"
-    onkeydown="myOnklickFunction('aufgabe_onkeydown_input')"
-    />
+            <h2 id="aufgabe_onkey_h2">Aufgaben: onkeyup/onkeydown</h2>
+            <input type="text" name="onkeyup_text" 
+            id="aufgabe_onkeyup_input"
+            onkeyup="myOnklickFunction('aufgabe_onkeyup_input')"
+            />
+            <input type="text" name="onkeydown_text" 
+            id="aufgabe_onkeydown_input"
+            onkeydown="myOnklickFunction('aufgabe_onkeydown_input')"
+            />
+        </section>
+        <section>
+            <h1 class="section_titel_style">Sektion III:<br>Debugger</h1>
+            <h1>Breakpoints setzen</h1>
+            <button onclick="init_1()">Start Code</button>
 
-    <h1 class="section_titel_style">Sektion III: Debugger</h1>
-    <h1>Breakpoints setzen</h1>
-    <button onclick="init_1()">Start Code</button>
+            <h1>Debugger-Pfeile</h1>
+            <p id="debugger_log_2"></p>
+            <button onclick="init_2()">start debugger testing</button>
+            
+            <h1>Variablen anzeigen</h1>
+            <p id="debugger_log_3">0</p>
+            <button onclick="init_3()">Start Code</button>
 
-    <h1>Debugger-Pfeile</h1>
-    <p id="debugger_log_2"></p>
-    <button onclick="init_2()">start debugger testing</button>
-    
-    <h1>Variablen anzeigen</h1>
-    <p id="debugger_log_3">0</p>
-    <button onclick="init_3()">Start Code</button>
+            <h1>Scopes im Debugger sehen</h1>
+            <p id="debugger_log_4">0</p>
+            <button onclick="init_4()">Start Code</button>
 
-    <h1>Scopes im Debugger sehen</h1>
-    <p id="debugger_log_4">0</p>
-    <button onclick="init_4()">Start Code</button>
-
-    <h1 onclick="testSeven()">wichtige Tabs des Debuggers</h1>
-    <p id="debugger_log_5">0</p>
-    <input type="text" onkeyup="testSeven()">
-    <button onclick="init_5()">Start Code</button>
-
+            <h1 onclick="testSeven()">wichtige Tabs des Debuggers</h1>
+            <p id="debugger_log_5">0</p>
+            <input type="text" onkeyup="testSeven()">
+            <button onclick="init_5()">Start Code</button>
+        </section>
+        <section>
+            <h1 class="section_titel_style">Sektion IV:<br>Arrays und Schleifen</h1>
+            <button onclick="initArrays()">Start Array Function</button>
+        </section>
+    </main>
+    <footer>
+        <h1>Elenas Footer</h1>
+    </footer>
 </body>
     <script src="./dom_manipulation.js"></script>
     <script src="./ii_dom_practice_tasks.js"></script>
