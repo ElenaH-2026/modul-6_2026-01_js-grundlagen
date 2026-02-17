@@ -176,6 +176,17 @@ if(myIfCondition_2) {
     console.log("bye world!");   // -> bye world!
 }
 
+// Sie Live-Call-Notes vom 17.2. bei Diana
+let temperature
+let weather = temprerature > 20 ? "warm" : "cold";
+console.log(weather);
+
+if (temprerature > 20) {
+    return "warm";
+} else {
+    return "cold";
+}
+
 
 // Test => am 14.01.2026 alles korrekt gelöst :D
 console.log("// Test if, else, else if")
