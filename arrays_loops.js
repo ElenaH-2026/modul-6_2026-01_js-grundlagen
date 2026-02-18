@@ -397,14 +397,140 @@ function isPrime(nr) {
            return "false (" + nr + " ist keine Primzahl)"; 
         } 
     }
-    
     return "true (" + nr + " ist eine Primzahl)";
 }
 
-function initLoopsTask_B() {
+function initLoopsTask_B1() {
     console.log(isPrime(7)); // -> true (7 ist eine Primzahl) => RICHTIG
     console.log(isPrime(4)); // -> false (4 ist keine Primzahl) => RICHTIG
     console.log(isPrime(16)); // -> false (16 ist keine Primzahl) => RICHTIG
     console.log(isPrime(29)); // -> true (29 ist eine Primzahl) => RICHTIG
     console.log(isPrime(1)); // -> false (1 ist keine Primzahl) => RICHTIG
 } 
+
+function is_Prime(nr) {
+    if (nr == 1) {
+        return "false (" + nr + " ist keine Primzahl)";
+    }
+
+    let divisors = Array.from({ length: (nr - 2) }, (_, i) => 2 + i);
+
+    console.log(divisors);
+    
+    for (let index = 0; index < divisors.length; index++) {
+        let q = nr / divisors[index]
+        if (divisors.includes(q)) {
+           return "false (" + nr + " ist keine Primzahl)"; 
+        } 
+    }
+    return "true (" + nr + " ist eine Primzahl)";
+}
+
+function initLoopsTask_B2() {
+    console.log(is_Prime(7)); // -> true (7 ist eine Primzahl) => RICHTIG
+    console.log(is_Prime(4)); // -> false (4 ist keine Primzahl) => RICHTIG
+    console.log(is_Prime(16)); // -> false (16 ist keine Primzahl) => RICHTIG
+    console.log(is_Prime(29)); // -> true (29 ist eine Primzahl) => RICHTIG
+    console.log(is_Prime(1)); // -> false (1 ist keine Primzahl) => RICHTIG
+} 
+
+
+/// for-Schleife: break und continue'
+console.log("// for-Schleife: break und continue'");
+
+
+let testArray_3 = [3, 7,"error", 1, 4];
+
+function sumArrayNoBreak(array) {
+    let sum = 0;
+    for (let index = 0; index < array.length; index++) {
+        sum += array[index];
+    }
+    return sum;
+}
+
+function sumArrayBreak(array) {
+    let sum = 0;
+    for (let index = 0; index < array.length; index++) {
+        sum += array[index];
+
+        if (array[index] == "error") {
+            console.error("Verdammt, da war ein Fehler!");
+            break;
+        }
+    }
+    return sum;
+}
+
+function sumArrayContinue(array) {
+    let sum = 0;
+    for (let index = 0; index < array.length; index++) {
+        
+        if (array[index] == "error") {
+            console.warn("Achtung, hier ist ein Fehler!");
+            continue;
+        }
+
+        sum += array[index];
+    }
+    return sum;
+}
+
+function initLoopsBreakContinue() {
+    console.log(sumArrayNoBreak(testArray_3)); // -> 10error14
+    console.log(sumArrayBreak(testArray_3)); // -> 10error (=> Verdammt, da war ein Fehler!)
+    console.log(sumArrayContinue(testArray_3)); // -> 15 (=> Achtung, hier ist ein Fehler!)
+}
+
+
+/// while-Schleife
+console.log("// while-Schleife");
+
+function initLoopsWhile() {
+
+    while_index = 0;
+    while (while_index < 5) {
+        console.log("while " + while_index);
+        while_index++;
+    }
+
+    for (let for_index = 0; for_index < 5; for_index++) {
+        console.log("for " + for_index);
+    }
+}
+
+
+/// forEach-Schleife
+console.log("// forEach-Schleife");
+
+function initLoopsForEach() {
+
+    arrayFruits.forEach(element => {
+        console.log(element);
+    });
+
+    for (let i = 0; i < arrayFruits.length; i++) {
+        console.log(arrayFruits[i]);
+    }
+}
+
+
+/// Beispiel: getElementsByClassname'
+console.log("// Beispiel: getElementsByClassname'");
+
+function initFunction() {
+    let refList_1 = document.getElementsByClassName('orange_box');
+    
+    for (let index = 0; index < refList_1.length; index++) {
+        let singleRef = refList_1[index];
+        singleRef.innerText = index
+    }
+
+    let refList_2 = document.getElementsByClassName('green_fill');
+    
+    for (let index = 0; index < refList_2.length; index++) {
+        let singleRef = refList_2[index];
+        singleRef.innerText += " 💞"
+    }
+
+}

@@ -79,6 +79,21 @@
             display: none;
         }
 
+        .d_flex {
+            display: flex;
+        }
+
+        .orange_box {
+            height: 50px;
+            width: 50px;
+            border: 8px orange solid;
+            text-align: center;
+        }
+
+        .green_fill {
+            background-color: green;
+        }
+
         @media (max-width: 1400px) {
             main {
                 flex-direction: column;
@@ -231,8 +246,28 @@
                 <div id="loop_task_4"></div>
                 <button onclick="initLoopsTask_4()">Start Loop Function</button>
 
-                <h1>for-Schleife: Bonusaufgabe 'Prüfung auf Primzahlen'</h1>
-                <button onclick="initLoopsTask_B()">Start Loop Function</button>
+                <h1>for-Schleife: Bonusaufgabe v1 'Prüfung auf Primzahlen'</h1>
+                <button onclick="initLoopsTask_B1()">Start Loop Function</button>
+
+                <h1>for-Schleife: Bonusaufgabe v2 'Prüfung auf Primzahlen'</h1>
+                <button onclick="initLoopsTask_B2()">Start Loop Function</button>
+
+                <h1>for-Schleife: break und continue</h1>
+                <button onclick="initLoopsBreakContinue()">Start Loop Function</button>
+
+                <h1>while-Schleife</h1>
+                <button onclick="initLoopsWhile()">Start While Function</button>
+
+                <h1>forEach-Schleife</h1>
+                <button onclick="initLoopsForEach()">Start ForEach Function</button>
+            </div>
+            <h1>Beispiel: getElementsByClassname</h1>
+            <button onclick="initFunction()">Start Function</button>
+            <div class="d_flex">
+                <div class="orange_box green_fill"></div>
+                <div class="orange_box"></div>
+                <div class="orange_box green_fill"></div>
+                <div class="orange_box"></div>
             </div>
         </section>
     </main>
