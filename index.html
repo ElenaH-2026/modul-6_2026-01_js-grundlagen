@@ -94,7 +94,7 @@
             background-color: green;
         }
 
-        @media (max-width: 1400px) {
+        @media (max-width: 1780px) {
             main {
                 flex-direction: column;
             }
@@ -192,75 +192,36 @@
             <input type="text" onkeyup="testSeven()">
             <button onclick="init_5()">Start Code</button>
         </section>
-        <section> <!-- Sektion IV: Arrays und Schleifen -->
-            <h1 class="section_titel_style">Sektion IV:<br>Arrays und Schleifen</h1>
+        <section> <!-- Sektion IV: Arrays -->
+            <h1 class="section_titel_style">Sektion IV:<br>Arrays</h1>
 
-            <div> <!-- Arrays -->
-                <h1>Arrays: Basics</h1>
-                <button onclick="initArraysBasics()">Start Array-Basics Function</button>
+            <h1>Arrays: Basics</h1>
+            <button onclick="initArraysBasics()">Start Array-Basics Function</button>
 
-                <h1>Arrays:<br>entries und das 'empty'</h1>
-                <button onclick="initArraysEmpty()">Start Array-Empty Function</button>
+            <h1>Arrays:<br>entries und das 'empty'</h1>
+            <button onclick="initArraysEmpty()">Start Array-Empty Function</button>
 
-                <h1>Arrays: pop() und push()</h1>
-                <button onclick="initArraysFriends()">Start Array Function</button>
+            <h1>Arrays: pop() und push()</h1>
+            <button onclick="initArraysFriends()">Start Array Function</button>
 
-                <h1>Arrays: includes()</h1>
-                <button onclick="initArraysIncludes()">Start Array Function</button>
+            <h1>Arrays: includes()</h1>
+            <button onclick="initArraysIncludes()">Start Array Function</button>
 
-                <h1>Arrays: indexOf()</h1>
-                <button onclick="initArraysIndexOf()">Start Array Function</button>
+            <h1>Arrays: indexOf()</h1>
+            <button onclick="initArraysIndexOf()">Start Array Function</button>
 
-                <h1>Arrays: shift()</h1>
-                <button onclick="initArraysShift()">Start Array Function</button>
+            <h1>Arrays: shift()</h1>
+            <button onclick="initArraysShift()">Start Array Function</button>
 
-                <h1>Arrays: unshift()</h1>
-                <button onclick="initArraysUnshift()">Start Array Function</button>
+            <h1>Arrays: unshift()</h1>
+            <button onclick="initArraysUnshift()">Start Array Function</button>
 
-                <h1>Arrays: slice()</h1>
-                <button onclick="initArraysSlice()">Start Array Function</button>
+            <h1>Arrays: slice()</h1>
+            <button onclick="initArraysSlice()">Start Array Function</button>
 
-                <h1>Arrays: join()</h1>
-                <button onclick="initArraysJoin()">Start Array Function</button>
-            </div>
-            <div> <!-- Schleifen -->
-                <h1>for-Schleife: Basics</h1>
-                <button onclick="initLoopsBasics()">Start Loop Function</button>
+            <h1>Arrays: join()</h1>
+            <button onclick="initArraysJoin()">Start Array Function</button>
 
-                <h1>for-Schleife: Interation durch Arrays</h1>
-                <div id="my_content"></div>
-                <button onclick="initLoopsArray()">Start Loop Function</button>
-
-                <h1>for-Schleife: Aufgabe 1 'Summe der Elemente eines Arrays'</h1>
-                <button onclick="initLoopsTask_1()">Start Loop Function</button>
-
-                <h1>for-Schleife: Aufgabe 2 'Ausgabe einer Zahlenreihe'</h1>
-                <div id="loop_task_2"></div>
-                <button onclick="initLoopsTask_2()">Start Loop Function</button>
-
-                <h1>for-Schleife: Aufgabe 3 'Rückwärts laufende for-Schleife'</h1>
-                <div id="loop_task_3"></div>
-                <button onclick="initLoopsTask_3()">Start Loop Function</button>
-
-                <h1>for-Schleife: Aufgabe 4 'Nur jedes dritte Element ausgeben'</h1>
-                <div id="loop_task_4"></div>
-                <button onclick="initLoopsTask_4()">Start Loop Function</button>
-
-                <h1>for-Schleife: Bonusaufgabe v1 'Prüfung auf Primzahlen'</h1>
-                <button onclick="initLoopsTask_B1()">Start Loop Function</button>
-
-                <h1>for-Schleife: Bonusaufgabe v2 'Prüfung auf Primzahlen'</h1>
-                <button onclick="initLoopsTask_B2()">Start Loop Function</button>
-
-                <h1>for-Schleife: break und continue</h1>
-                <button onclick="initLoopsBreakContinue()">Start Loop Function</button>
-
-                <h1>while-Schleife</h1>
-                <button onclick="initLoopsWhile()">Start While Function</button>
-
-                <h1>forEach-Schleife</h1>
-                <button onclick="initLoopsForEach()">Start ForEach Function</button>
-            </div>
             <h1>Beispiel: getElementsByClassname</h1>
             <button onclick="initFunction()">Start Function</button>
             <div class="d_flex">
@@ -270,6 +231,47 @@
                 <div class="orange_box"></div>
             </div>
         </section>
+        <section> <!-- Sektion IV: Schleifen -->
+            <h1 class="section_titel_style">Sektion IV:<br>Schleifen</h1>
+
+            <h1>for-Schleife: Basics</h1>
+            <button onclick="initLoopsBasics()">Start Loop Function</button>
+
+            <h1>for-Schleife: Interation durch Arrays</h1>
+            <div id="my_content"></div>
+            <button onclick="initLoopsArray()">Start Loop Function</button>
+
+            <h1>for-Schleife: Aufgabe 1 'Summe der Elemente eines Arrays'</h1>
+            <button onclick="initLoopsTask_1()">Start Loop Function</button>
+
+            <h1>for-Schleife: Aufgabe 2 'Ausgabe einer Zahlenreihe'</h1>
+            <div id="loop_task_2"></div>
+            <button onclick="initLoopsTask_2()">Start Loop Function</button>
+
+            <h1>for-Schleife: Aufgabe 3 'Rückwärts laufende for-Schleife'</h1>
+            <div id="loop_task_3"></div>
+            <button onclick="initLoopsTask_3()">Start Loop Function</button>
+
+            <h1>for-Schleife: Aufgabe 4 'Nur jedes dritte Element ausgeben'</h1>
+            <div id="loop_task_4"></div>
+            <button onclick="initLoopsTask_4()">Start Loop Function</button>
+
+            <h1>for-Schleife: Bonusaufgabe v1 'Prüfung auf Primzahlen'</h1>
+            <button onclick="initLoopsTask_B1()">Start Loop Function</button>
+
+            <h1>for-Schleife: Bonusaufgabe v2 'Prüfung auf Primzahlen'</h1>
+            <button onclick="initLoopsTask_B2()">Start Loop Function</button>
+
+            <h1>for-Schleife: break und continue</h1>
+            <button onclick="initLoopsBreakContinue()">Start Loop Function</button>
+
+            <h1>while-Schleife</h1>
+            <button onclick="initLoopsWhile()">Start While Function</button>
+
+            <h1>forEach-Schleife</h1>
+            <button onclick="initLoopsForEach()">Start ForEach Function</button>
+        </section>
+            
     </main>
     <footer>
         <h1>Elenas Footer</h1>
